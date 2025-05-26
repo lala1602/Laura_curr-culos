@@ -1,0 +1,115 @@
+/* Estilo básico para corpo */
+/* Importa a fonte Poppins do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 0 15px;
+    background-color: #0b2545; /* azul escuro */
+    color: #fff; /* texto branco */
+}
+
+/* Títulos */
+h1, h2 {
+    text-align: center;
+    font-weight: 600;
+}
+
+/* Formulário */
+form {
+    background-color: #1b3a70; /* azul mais claro para o fundo do form */
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+/* Inputs e textarea com fundo escuro e texto branco */
+input[type="text"],
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+    background-color: #133d7a;
+    color: #fff;
+}
+
+/* Placeholder com cor mais clara */
+input::placeholder,
+textarea::placeholder {
+    color: #cbd6e4;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Botão azul claro com texto escuro */
+button {
+    margin-top: 15px;
+    padding: 10px 15px;
+    background-color: #5dade2;
+    color: #0b2545;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover:not(:disabled) {
+    background-color: #2980b9;
+    color: white;
+}
+
+button:disabled {
+    background-color: #555;
+    cursor: not-allowed;
+}
+
+/* Tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: #1b3a70; /* mesma cor do form para consistência */
+    color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+th, td {
+    border: 1px solid #fff;
+    padding: 12px 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #295a9f;
+}
+
+/* Hover para as linhas da tabela */
+tbody tr:hover {
+    background-color: #133d7a;
+}
+
+/* Parágrafo de observação */
+p em {
+    color: #a8bbd3;
+    font-size: 14px;
+    display: block;
+    text-align: center;
+}
+
