@@ -1,0 +1,139 @@
+/* Importa a fonte Poppins do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 0 15px;
+    background-color: #0e2848; /* azul escuro */
+    color: #000000; /* texto preto */
+}
+
+/* Títulos */
+h1, h2 {
+    text-align: center;
+    font-weight: 600;
+    color: #b30000; /* vermelho escuro */
+}
+
+/* Formulário */
+form {
+    background-color: #1b3a70; /* azul mais claro para o fundo do form */
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 10px rgba(179, 0, 0, 0.5);
+    border: 2px solid #b30000; /* borda vermelha */
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    color: #b30000; /* vermelho nos labels */
+}
+
+/* Inputs e textarea com fundo azul e texto branco */
+input[type="text"],
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    border: 1px solid #b30000; /* borda vermelha */
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+    background-color: #133d7a; /* azul médio */
+    color: #ffffff; /* texto branco */
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]::placeholder,
+textarea::placeholder {
+    color: #ffffff; /* vermelho claro para placeholder */
+}
+
+input[type="text"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #ff0000; /* vermelho vivo no foco */
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Botão estilizado */
+button {
+    margin-top: 15px;
+    padding: 12px 20px;
+    background-color: #b30000; /* vermelho */
+    color: #000000; /* texto preto */
+    border: none;
+    border-radius: 12px; /* mais arredondado */
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 18px;
+    box-shadow: 0 4px 6px rgba(179, 0, 0, 0.4);
+    transition: 
+      background-color 0.3s ease,
+      box-shadow 0.3s ease,
+      transform 0.2s ease;
+    width: 100%;
+}
+
+button:hover:not(:disabled) {
+    background-color: #ff0000; /* vermelho vivo */
+    box-shadow: 0 6px 10px rgba(255, 0, 0, 0.6);
+    transform: scale(1.05); /* leve zoom */
+    color: #000000; /* texto preto */
+}
+
+button:disabled {
+    background-color: #999999;
+    cursor: not-allowed;
+    color: #666666;
+    box-shadow: none;
+    transform: none;
+}
+
+/* Tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: #1b3a70; /* azul do formulário */
+    color: #ffffff; /* texto branco */
+    box-shadow: 0 0 10px rgba(179, 0, 0, 0.5);
+    border-radius: 6px;
+    overflow: hidden;
+    border: 2px solid #b30000; /* borda vermelha */
+}
+
+th, td {
+    border: 1px solid #b30000;
+    padding: 12px 8px;
+    text-align: left;
+    color: #ffffff; /* texto branco nas células */
+}
+
+th {
+    background-color: #b30000;
+    color: #ffffff;
+}
+
+/* Hover para as linhas da tabela */
+tbody tr:hover {
+    background-color: #ffffff;
+    color: #000000; /* texto preto no hover para contraste */
+}
+
+/* Parágrafo de observação */
+p em {
+    color: #ffffff;
+    font-size: 14px;
+    display: block;
+    text-align: center;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <title>Cadastro de Currículos</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <h1>Cadastro de Currículos</h1>
+
+    <form id="form-curriculo">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="Digite o nome" />
+
+        <label for="area">Área de Interesse:</label>
+        <select id="area" name="area">
+            <option value="">Selecione uma área</option>
+            <option value="TI">TI</option>
+            <option value="Marketing">Marketing</option>
+            <option value="RH">RH</option>
+            <option value="Finanças">Finanças</option>
+            <option value="Data Science">Data Science</option>
+        </select>
+
+        <label for="experiencia">Experiência:</label>
+        <textarea id="experiencia" name="experiencia" rows="4" placeholder="Descreva sua experiência"></textarea>
+
+        <button type="submit">Cadastrar</button>
+    </form>
+
+    <h2>Lista de Currículos</h2>
+
+    <table id="tabela-curriculos" border="1" cellspacing="0" cellpadding="5">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Área de Interesse</th>
+                <th>Experiência</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Os currículos cadastrados aparecerão aqui -->
+        </tbody>
+    </table>
+
+    <!-- IMPORTANTE: inclusão do script -->
+    <script src="script.js"></script>
+</body>
+</html>
